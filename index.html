@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nic o nas bez nas! - Konsultacje Prawa Łowieckiego</title>
+<meta name="description" content="Sejm pyta o Twoją opinię w sprawie zmiany Prawa Łowieckiego. Masz czas do 18 października. Zajmie Ci to 10 minut.">
+<style>
+  :root{
+    --green:#1f3d2b;
+    --green-light:#2e5939;
+    --cream:#f6f1e7;
+    --accent:#c0392b;
+    --text:#1a1a1a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.5;
+  }
+  header.hero{
+    background:var(--green);
+    color:var(--cream);
+    padding:28px 20px 36px;
+    text-align:center;
+  }
+  header.hero h1{
+    font-size:clamp(28px,7vw,46px);
+    margin:0 0 10px;
+    letter-spacing:0.5px;
+  }
+  .countdown{
+    display:inline-block;
+    background:var(--accent);
+    color:white;
+    padding:8px 16px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:15px;
+    margin:10px 0 18px;
+  }
+  .lead{
+    max-width:680px;
+    margin:0 auto 20px;
+    font-size:17px;
+  }
+  .cta{
+    display:inline-block;
+    background:var(--accent);
+    color:white !important;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:19px;
+    padding:16px 32px;
+    border-radius:10px;
+    box-shadow:0 4px 0 rgba(0,0,0,0.2);
+    margin:10px 0;
+  }
+  .cta:active{transform:translateY(2px);box-shadow:none;}
+  main{max-width:720px;margin:0 auto;padding:24px 20px 100px;}
+  section{margin-bottom:28px;}
+  h2{color:var(--green);border-bottom:3px solid var(--accent);padding-bottom:6px;}
+  details{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:14px 18px;
+    margin-bottom:16px;
+  }
+  summary{
+    font-weight:bold;
+    font-size:18px;
+    color:var(--green);
+    cursor:pointer;
+  }
+  details p{margin:14px 0;}
+  .step-list{background:white;border-radius:10px;padding:18px 22px;border:1px solid #ddd;}
+  .step-list li{margin-bottom:10px;}
+  .qr-box{
+    text-align:center;
+    background:white;
+    border-radius:10px;
+    padding:18px;
+    border:1px solid #ddd;
+  }
+  .qr-box img{width:160px;height:160px;}
+  footer{
+    text-align:center;
+    padding:30px 20px;
+    font-size:13px;
+    color:#555;
+  }
+  .sticky-cta{
+    position:fixed;
+    bottom:0;left:0;right:0;
+    background:var(--green);
+    padding:10px 16px;
+    text-align:center;
+    box-shadow:0 -2px 8px rgba(0,0,0,0.2);
+    z-index:999;
+  }
+  .sticky-cta a{
+    display:block;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:12px;
+    border-radius:8px;
+  }
+  .privacy-note{
+    font-size:12px;
+    color:#777;
+    text-align:center;
+    margin-top:30px;
+  }
+  .poster-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .poster-grid a{
+    display:block;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #ddd;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  }
+  .poster-grid img{
+    width:100%;
+    display:block;
+  }
+  @media (min-width:700px){
+    .poster-grid{grid-template-columns:1fr 1fr 1fr;}
+  }
+  .login-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    margin:14px 0;
+    font-size:14px;
+  }
+  .login-table th,.login-table td{
+    border:1px solid #ddd;
+    padding:10px 12px;
+    text-align:left;
+  }
+  .login-table th{background:var(--green);color:white;}
+  .note-box{
+    background:#fff6e0;
+    border-left:4px solid var(--accent);
+    padding:12px 16px;
+    border-radius:6px;
+    font-size:14px;
+  }
+  .qa{
+    margin-bottom:14px;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+    font-size:15px;
+  }
+  .qa em{color:#444;}
+</style>
+</head>
+<body>
+
+<header class="hero" id="start">
+  <h1>NIC O NAS BEZ NAS!</h1>
+  <div class="countdown" id="countdown">Liczenie...</div>
+  <p class="lead">
+    Masz dziś dziesięć minut, które mogą zdecydować o przyszłości polskiego
+    łowiectwa. Sejm prowadzi konsultacje obywatelskiego projektu zmiany
+    Prawa Łowieckiego - projektu, pod którym zebrano ponad dwieście cztery
+    tysiące podpisów, głównie organizacji przeciwnych łowiectwu.
+  </p>
+  <p class="lead">
+    Co zawiera projekt? Likwidację legalnej, licencjonowanej działalności
+    związanej z organizacją polowań. Zwiększenie minimalnej odległości
+    strzelania od budynków z 150 do 700 metrów - bez różnicowania rodzaju
+    broni. Prawo jednego właściciela gruntu do zablokowania całego obwodu
+    łowieckiego, bez możliwości odwołania. Zakaz dokarmiania zwierzyny.
+    I zaostrzone kary, łącznie z dożywotnim zakazem wykonywania polowania.
+  </p>
+  <p class="lead">
+    Druga strona już zmobilizowała swoich zwolenników. Jeśli my się nie
+    odezwiemy, Sejm usłyszy tylko jeden głos.
+  </p>
+  <a class="cta" href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT" target="_blank" rel="noopener">
+    WYPEŁNIJ ANKIETĘ SEJMU &rarr;
+  </a>
+  <div class="qr-box" style="margin-top:16px;max-width:200px;margin-left:auto;margin-right:auto;">
+    <img src="assets/qr-ankieta.png" alt="Kod QR do ankiety Sejmu">
+    <div style="font-size:12px;margin-top:6px;">Zeskanuj telefonem</div>
+  </div>
+</header>
+
+<main>
+
+<section id="trzy-minuty">
+  <h2>Chcesz wiedzieć więcej? (3 minuty)</h2>
+  <details>
+    <summary>Rozwiń pełne uzasadnienie - pięć najważniejszych zmian</summary>
+    <p>
+      Sejm prowadzi obecnie konsultacje społeczne obywatelskiego projektu
+      zmiany Prawa Łowieckiego, oznaczonego sygnaturą RPW/29629/2026.
+      Projekt złożyły organizacje społeczne, zbierając pod nim ponad
+      dwieście cztery tysiące podpisów. Konsultacje trwają do niedzieli,
+      osiemnastego października.
+    </p>
+    <p>
+      Organizacje, które przygotowały ten projekt, aktywnie namawiają
+      swoich zwolenników do udziału w ankiecie i podają im gotowe,
+      jednostronne odpowiedzi. Jeśli środowisko myśliwskie się nie odezwie,
+      Sejm usłyszy tylko jedną stronę tego sporu.
+    </p>
+    <p><strong>1. Likwidacja komercyjnej organizacji polowań.</strong>
+      Firmy mają trzy lata na zamknięcie działalności, a odszkodowanie
+      wynosi od pięć do piętnastu procent średniego rocznego przychodu -
+      to nie pokrywa realnej wartości utraconego biznesu.</p>
+    <p><strong>2. Odległość 700 metrów od budynków.</strong>
+      Jedna, sztywna norma dla całego kraju, bez różnicowania broni/amunicji.
+      Przy rozproszonej zabudowie wiejskiej wyłącza to z gospodarki
+      łowieckiej znaczną część obwodów polnych.</p>
+    <p><strong>3. Prawo weta właściciela gruntu.</strong>
+      Można zablokować włączenie nieruchomości do obwodu, a dzierżawca
+      nie ma realnego środka odwoławczego.</p>
+    <p><strong>4. Zakaz dokarmiania i nęcenia zwierzyny.</strong>
+      Utrudnia to prowadzenie racjonalnej gospodarki łowieckiej, w tym
+      redukcji populacji dzików ważnej dla zwalczania ASF.</p>
+    <p><strong>5. Zaostrzone sankcje karne.</strong>
+      Areszt i ograniczenie wolności za czyny karane dotąd grzywną, a sąd
+      może orzec zakaz wykonywania polowania do piętnastu lat, w szczególnych
+      przypadkach dożywotnio.</p>
+    <p>
+      Nie jesteśmy przeciw wszystkiemu - popieramy jawność gospodarki
+      łowieckiej, okresowe badania myśliwych i realny nadzór ministra nad
+      finansami PZŁ. Jesteśmy przeciw pakietowi, który łączy te słuszne
+      cele z rozwiązaniami nieproporcjonalnymi.
+    </p>
+    <a class="cta" href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT" target="_blank" rel="noopener">WYPEŁNIJ ANKIETĘ TERAZ &rarr;</a>
+  </details>
+</section>
+
+<section id="pietnastominut">
+  <h2>Pełna analiza projektu (15 minut)</h2>
+  <details>
+    <summary>Rozwiń szczegółowe omówienie wszystkich zmian + FAQ</summary>
+    <p><strong>Kontekst.</strong> 17 września 2026 r. do Sejmu wpłynął
+      obywatelski projekt ustawy o zmianie ustawy Prawo Łowieckie,
+      sygnatura RPW/29629/2026, druk sejmowy nr 3184. Konsultacje trwają
+      od 18 września do 18 października 2026 r.</p>
+    <p><strong>Zmiana 1 - likwidacja komercyjnej organizacji polowań.</strong>
+      Art. 18 obecnej ustawy pozwala na działalność gospodarczą pod
+      warunkami. Projekt (Art. 1 pkt 10) wprowadza całkowity zakaz, nawet
+      bez wynagrodzenia pieniężnego. Przepisy przejściowe (Art. 10-19)
+      przewidują wygaszenie firm w ciągu 3 lat, odszkodowanie 5-15%
+      średniego przychodu.</p>
+    <p><strong>Zmiana 2 - siedemset metrów od budynków.</strong>
+      Obecnie 150 m od zabudowań, 500 m od zebrań publicznych (art. 42aa).
+      Projekt (Art. 1 pkt 24) zwiększa obie normy do 700 m, bez
+      różnicowania broni/amunicji. Odstępstwo do 150 m tylko za pisemną
+      zgodą właściciela budynku, nie dotyczy obiektów użyteczności
+      publicznej.</p>
+    <p><strong>Zmiana 3 - prawo weta właściciela gruntu.</strong>
+      Nowy art. 27 ust. 13a (Art. 1 pkt 14) - pisemne oświadczenie o
+      niewyrażeniu zgody na włączenie nieruchomości do obwodu, termin
+      min. 21 dni. Marszałek może przełamać odmowę tylko w szczególnych
+      przypadkach, decyzją administracyjną.</p>
+    <p><strong>Zmiana 4 - zakaz dokarmiania i nęcenia.</strong>
+      Nowy art. 13 (Art. 1 pkt 8) - całkowity zakaz, odstępstwo tylko za
+      zgodą RDOŚ i wyłącznie dla ochrony zwierząt, nie dla celów
+      łowieckich.</p>
+    <p><strong>Zmiana 5 - nowy katalog zakazów i zaostrzone kary.</strong>
+      Art. 1 pkt 24 dodaje zakazy: polowanie z pojazdów/łodzi, z nagonką
+      (nawet jednoosobową), noktowizja/termowizja w nocy, pod wpływem
+      alkoholu. Art. 51-54: areszt/ograniczenie wolności za wykroczenia,
+      obligatoryjny zakaz polowania 6 miesięcy - 3 lata za alkohol, sądowy
+      zakaz polowania do 15 lat, w szczególnych przypadkach dożywotnio.</p>
+    <p><strong>Zmiana 6 - wzmocniona rola RDOŚ i organizacji ekologicznych.</strong>
+      Roczne plany łowieckie wymagają uzgodnienia z RDOŚ z możliwością
+      odmowy. Organizacje społeczne zyskują prawo strony w postępowaniach,
+      prawo odwołania i skargi do sądu.</p>
+    <p><strong>Czego popieramy.</strong> Jawność gospodarki łowieckiej,
+      okresowe badania lekarskie/psychologiczne myśliwych, realny nadzór
+      ministra nad finansami PZŁ. Problemem jest pakiet "wszystko albo
+      nic" łączący te cele z rozwiązaniami nieproporcjonalnymi.</p>
+    <p><strong>FAQ: Czy polowania zostaną całkowicie zakazane?</strong> Nie,
+      ale skumulowany efekt zmian może uczynić gospodarkę łowiecką bardzo
+      trudną w wielu obwodach, zwłaszcza polnych.</p>
+    <p><strong>FAQ: Czy to mnie dotyczy, jeśli nie jestem przedsiębiorcą?</strong>
+      Tak - normy odległościowe, zakazy sposobu polowania, obowiązki
+      rejestrowe i sankcje karne dotyczą każdego myśliwego.</p>
+    <p><strong>FAQ: Czy mogę wypełnić ankietę więcej niż raz?</strong> Nie -
+      logowanie przez login.gov.pl weryfikuje tożsamość, jeden formularz
+      na osobę.</p>
+    <p><strong>FAQ: Czy mój komentarz będzie publiczny?</strong> Tak - Sejm
+      publikuje komentarze z imieniem i nazwiskiem, widoczne do końca
+      kadencji. Musi być w języku polskim, bez słów obraźliwych.</p>
+    <a class="cta" href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT" target="_blank" rel="noopener">WYPEŁNIJ ANKIETĘ TERAZ &rarr;</a>
+  </details>
+</section>
+
+<section id="jak">
+  <h2>Jak wypełnić ankietę - 5 kroków</h2>
+  <ol class="step-list">
+    <li>Wejdź na stronę projektu Sejmu (przycisk powyżej) i kliknij link <strong>"Ankieta"</strong>. Może pojawić się krótkie zabezpieczenie antybotowe (captcha) - odczytaj kod z obrazka i wpisz go w pole tekstowe.</li>
+    <li>Zostaniesz przekierowany na <strong>login.gov.pl</strong> - centralny węzeł logowania do usług administracji publicznej RP. Wybierz jedną z metod:</li>
+  </ol>
+  <table class="login-table">
+    <tr><th>Metoda</th><th>Jak to zrobić</th></tr>
+    <tr><td>Bankowość elektroniczna</td><td>Wybierz swój bank z listy i zaloguj się tak, jak zwykle logujesz się do swojego konta bankowego.</td></tr>
+    <tr><td>Aplikacja mObywatel</td><td>Jeśli wypełniasz ankietę na komputerze, zeskanuj telefonem kod QR wyświetlony na ekranie i potwierdź logowanie w aplikacji.</td></tr>
+    <tr><td>Profil Zaufany</td><td>Zaloguj się przy użyciu swojego dotychczasowego logina i hasła.</td></tr>
+    <tr><td>e-Dowód</td><td>Wymaga dowodu osobistego z warstwą elektroniczną oraz telefonu lub czytnika z funkcją NFC.</td></tr>
+  </table>
+  <ol class="step-list" start="3">
+    <li>Po poprawnym zalogowaniu system automatycznie przekieruje Cię z powrotem na stronę Sejmu, do formularza ankiety konsultacyjnej. Zaakceptuj regulamin konsultacji.</li>
+    <li>Odpowiedz na 12 pytań ankiety - gotowe warianty odpowiedzi znajdziesz w sekcji niżej. Zaleca się dopisanie własnymi słowami krótkiego komentarza do pytania 5 - identyczne, masowo kopiowane komentarze mogą zostać ocenione jako mniej wiarygodne.</li>
+    <li>Na końcu formularz pozwala skomentować poszczególne artykuły projektu - ten krok można pominąć. Sprawdź podsumowanie i kliknij <strong>"Wyślij"</strong>. Ankietę można wypełnić tylko raz.</li>
+  </ol>
+  <p class="note-box">
+    <strong>Ważne:</strong> komentarze są publikowane na stronie Sejmu wraz z imieniem i nazwiskiem
+    osoby, która je zgłosiła, i pozostają widoczne do końca kadencji Sejmu. Komentarz musi być
+    napisany w języku polskim i nie może zawierać słów obraźliwych.
+  </p>
+  <p class="note-box">
+    <strong>Bezpieczeństwo:</strong> nigdy nie wprowadzaj loginu i hasła na stronach innych niż
+    login.gov.pl / pz.gov.pl / strona Twojego banku.
+  </p>
+</section>
+
+<section id="warianty">
+  <h2>3 warianty odpowiedzi na 12 pytań ankiety</h2>
+  <p>
+    Każdy wariant kładzie inny akcent, aby odpowiedzi myśliwych nie były identyczne.
+    Wybierz jeden i dopisz 1-2 własne zdania, najlepiej odwołujące się do Twojego
+    osobistego doświadczenia (staż w kole, rodzaj polowań, obwód łowiecki, okolica
+    zamieszkania).
+  </p>
+
+  <details>
+    <summary>Wariant 1 - akcent na proporcjonalność i bezpieczeństwo</summary>
+    <div class="qa"><strong>1. Kogo Pani/Pan reprezentuje?</strong> &rarr; Siebie<br>
+      <em>"Jestem myśliwym, członkiem koła łowieckiego - ta ustawa dotyczy mnie bezpośrednio."</em></div>
+    <div class="qa"><strong>2. Czy przyjęcie tej ustawy jest potrzebne?</strong> &rarr; 1</div>
+    <div class="qa"><strong>3. Czy akceptuje Pani/Pan rozwiązania zawarte w projekcie?</strong> &rarr; 1</div>
+    <div class="qa"><strong>4. Czy regulacje dotyczą Pani/Pana bezpośrednio?</strong> &rarr; 5</div>
+    <div class="qa"><strong>5. Komentarz do całości projektu:</strong><br>
+      <em>"Jako myśliwy sprzeciwiam się projektowi w obecnej formie. Zwiększenie minimalnej
+      odległości strzelania od budynków z 150 m do 700 m jest niezróżnicowane względem
+      rodzaju broni i amunicji, a przy typowej dla polskiej wsi rozproszonej zabudowie
+      siedliskowej w praktyce wyłącza z gospodarki łowieckiej większość obwodów polnych."</em></div>
+    <div class="qa"><strong>6. Czy problem można rozwiązać inaczej?</strong> &rarr; Tak<br>
+      <em>"Cel zwiększenia bezpieczeństwa można zrealizować przez zróżnicowanie minimalnej
+      odległości względem rodzaju broni i amunicji, a nie przez jedną sztywną normę 700 m."</em></div>
+    <div class="qa"><strong>7. Ocena skutków społecznych?</strong> &rarr; Nie<br>
+      <em>"Projekt nie szacuje wpływu na społeczności wiejskie korzystające z odszkodowań za
+      szkody łowieckie, ani ryzyka wzrostu kolizji drogowych ze zwierzyną."</em></div>
+    <div class="qa"><strong>8. Ocena skutków gospodarczych?</strong> &rarr; Nie<br>
+      <em>"Odszkodowanie 5-15% średniego przychodu z 3 lat nie odpowiada rzeczywistej
+      wartości utraconej działalności gospodarczej."</em></div>
+    <div class="qa"><strong>9. Ocena skutków finansowych?</strong> &rarr; Nie<br>
+      <em>"Koszty centralnego rejestru polowań i procedur uzgodnień z RDOŚ są niedoszacowane."</em></div>
+    <div class="qa"><strong>10. Ocena skutków prawnych?</strong> &rarr; Nie<br>
+      <em>"Wątpliwości budzi proporcjonalność ograniczenia prawa dzierżawców obwodów oraz
+      retroakcyjne skutki dla już zawartych umów."</em></div>
+    <div class="qa"><strong>11. Inne skutki niż wskazane przez wnioskodawcę?</strong> &rarr; Tak<br>
+      <em>"Ograniczenie możliwości redukcji populacji dzików może zwiększyć ryzyko
+      epizootyczne (ASF) oraz liczbę kolizji drogowych."</em></div>
+    <div class="qa"><strong>12. Czy ustawa wpłynie na inne podmioty?</strong> &rarr; Tak<br>
+      <em>"Ustawa wpłynie też na rolników, nadleśnictwa, firmy skupujące dziczynę oraz
+      producentów broni i optyki myśliwskiej."</em></div>
+  </details>
+
+  <details>
+    <summary>Wariant 2 - akcent na skutki gospodarcze i tradycję łowiecką</summary>
+    <div class="qa"><strong>1. Kogo Pani/Pan reprezentuje?</strong> &rarr; Siebie<br>
+      <em>"Wykonuję polowania od [X] lat, jestem związany z kołem łowieckim w [nazwa/okolica]."</em></div>
+    <div class="qa"><strong>2. Czy przyjęcie tej ustawy jest potrzebne?</strong> &rarr; 2</div>
+    <div class="qa"><strong>3. Czy akceptuje Pani/Pan rozwiązania zawarte w projekcie?</strong> &rarr; 1</div>
+    <div class="qa"><strong>4. Czy regulacje dotyczą Pani/Pana bezpośrednio?</strong> &rarr; 5</div>
+    <div class="qa"><strong>5. Komentarz do całości projektu:</strong><br>
+      <em>"Popieram jawność gospodarki łowieckiej i okresowe badania lekarskie myśliwych, ale
+      nie w pakiecie, który likwiduje legalną działalność gospodarczą w ciągu trzech lat za
+      odszkodowaniem rzędu zaledwie 5-15% średniego przychodu."</em></div>
+    <div class="qa"><strong>6. Czy problem można rozwiązać inaczej?</strong> &rarr; Tak<br>
+      <em>"Nadzór nad finansami PZŁ można wzmocnić punktową nowelizacją art. 35a, bez
+      likwidacji całego sektora usług łowieckich."</em></div>
+    <div class="qa"><strong>7. Ocena skutków społecznych?</strong> &rarr; Nie<br>
+      <em>"Projekt nie uwzględnia wpływu na kulturę i tradycję łowiecką jako element
+      dziedzictwa, przekazywany z pokolenia na pokolenie."</em></div>
+    <div class="qa"><strong>8. Ocena skutków gospodarczych?</strong> &rarr; Nie<br>
+      <em>"Ocena nie uwzględnia kosztów po stronie kół łowieckich związanych z obowiązkowym
+      usunięciem urządzeń (ambon) w terminie 12 miesięcy."</em></div>
+    <div class="qa"><strong>9. Ocena skutków finansowych?</strong> &rarr; Nie<br>
+      <em>"Nie oszacowano kosztów strategicznych ocen oddziaływania na środowisko wymaganych
+      dla każdego wieloletniego planu hodowlanego."</em></div>
+    <div class="qa"><strong>10. Ocena skutków prawnych?</strong> &rarr; Nie<br>
+      <em>"Brak zróżnicowania norm bezpieczeństwa względem rodzaju broni/amunicji może
+      naruszać zasadę adekwatności środka do celu (art. 31 ust. 3 Konstytucji)."</em></div>
+    <div class="qa"><strong>11. Inne skutki niż wskazane przez wnioskodawcę?</strong> &rarr; Tak<br>
+      <em>"Likwidacja usług łowieckich dla cudzoziemców wpłynie negatywnie na lokalną
+      turystykę i gastronomię na terenach wiejskich."</em></div>
+    <div class="qa"><strong>12. Czy ustawa wpłynie na inne podmioty?</strong> &rarr; Tak<br>
+      <em>"Dotknięci będą także taksydermiści, firmy ubezpieczeniowe oferujące OC myśliwym
+      oraz lokalni przedsiębiorcy hotelarsko-gastronomiczni."</em></div>
+  </details>
+
+  <details>
+    <summary>Wariant 3 - akcent na "nic o nas bez nas"</summary>
+    <div class="qa"><strong>1. Kogo Pani/Pan reprezentuje?</strong> &rarr; Siebie<br>
+      <em>"Jestem osobą bezpośrednio wykonującą polowania na podstawie uprawnień wydanych
+      przez Polski Związek Łowiecki."</em></div>
+    <div class="qa"><strong>2. Czy przyjęcie tej ustawy jest potrzebne?</strong> &rarr; 1</div>
+    <div class="qa"><strong>3. Czy akceptuje Pani/Pan rozwiązania zawarte w projekcie?</strong> &rarr; 2</div>
+    <div class="qa"><strong>4. Czy regulacje dotyczą Pani/Pana bezpośrednio?</strong> &rarr; 5</div>
+    <div class="qa"><strong>5. Komentarz do całości projektu:</strong><br>
+      <em>"Projekt powstał bez realnego udziału środowiska, którego dotyczy najbardziej.
+      Zasada 'nic o nas bez nas' wymaga, by regulacje tak głęboko zmieniające zasady
+      wykonywania legalnej działalności były konsultowane wspólnie z tą grupą społeczną."</em></div>
+    <div class="qa"><strong>6. Czy problem można rozwiązać inaczej?</strong> &rarr; Tak<br>
+      <em>"Rozwiązania powinny powstać w drodze dialogu z udziałem przedstawicieli PZŁ,
+      rolników i leśników, a nie wyłącznie organizacji jednej strony konfliktu interesów."</em></div>
+    <div class="qa"><strong>7. Ocena skutków społecznych?</strong> &rarr; Nie<br>
+      <em>"Ocena nie uwzględnia opinii i doświadczenia osób faktycznie wykonujących
+      polowania oraz dzierżawców obwodów odpowiedzialnych za gospodarkę łowiecką."</em></div>
+    <div class="qa"><strong>8. Ocena skutków gospodarczych?</strong> &rarr; Nie<br>
+      <em>"Projekt nie przedstawia analizy wpływu na koła łowieckie jako organizacje
+      społeczne działające non-profit."</em></div>
+    <div class="qa"><strong>9. Ocena skutków finansowych?</strong> &rarr; Nie<br>
+      <em>"Brak oceny kosztów wdrożenia nowych obowiązków sprawozdawczych i rejestrowych dla
+      kół łowieckich działających na zasadzie wolontariatu."</em></div>
+    <div class="qa"><strong>10. Ocena skutków prawnych?</strong> &rarr; Nie<br>
+      <em>"Prawo weta pojedynczego właściciela gruntu bez trybu odwoławczego dla dzierżawcy
+      obwodu budzi wątpliwości co do równowagi praw stron."</em></div>
+    <div class="qa"><strong>11. Inne skutki niż wskazane przez wnioskodawcę?</strong> &rarr; Tak<br>
+      <em>"Projekt może doprowadzić do postępującej fragmentacji terenów łownych i utraty
+      możliwości prowadzenia racjonalnej gospodarki łowieckiej w skali obwodu."</em></div>
+    <div class="qa"><strong>12. Czy ustawa wpłynie na inne podmioty?</strong> &rarr; Tak<br>
+      <em>"Zmiany odczują także gminy, które przejmują nowe obowiązki organizacyjne związane
+      z polowaniami zbiorowymi."</em></div>
+  </details>
+
+  <a class="cta" href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT" target="_blank" rel="noopener">WYPEŁNIJ ANKIETĘ TERAZ &rarr;</a>
+</section>
+
+<section id="plakaty">
+  <h2>Plakaty do udostępnienia</h2>
+  <p>Kliknij obrazek, zapisz go i udostępnij na grupach, forach lub social media. Każdy prowadzi bezpośrednio do ankiety.</p>
+  <div class="poster-grid">
+    <a href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT&amp;utm_source=plakat1" target="_blank" rel="noopener">
+      <img src="assets/mem-plakat-vintage.png" alt="Plakat w stylu I Want You - Nic o nas bez nas">
+    </a>
+    <a href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT&amp;utm_source=komiks" target="_blank" rel="noopener">
+      <img src="assets/mem-komiks.png" alt="Komiks satyryczny - myśliwy i aktywiści">
+    </a>
+    <a href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT&amp;utm_source=insta" target="_blank" rel="noopener">
+      <img src="assets/mem-minimalist.png" alt="Minimalistyczny plakat Instagram - Nic o nas bez nas">
+    </a>
+  </div>
+</section>
+
+
+<section id="przekaz">
+  <h2>Przekaż dalej</h2>
+  <p>
+    Zasada "nic o nas bez nas" oznacza, że głos grupy społecznej, której
+    ta regulacja dotyczy najbardziej, musi zostać usłyszany. Wyślij ten
+    link kolegom z koła, rodzinie, znajomym myśliwym.
+  </p>
+</section>
+
+</main>
+
+<div class="sticky-cta">
+  <a href="https://www.sejm.gov.pl/sejm10.nsf/agent.xsp?NrProjektu=RPW%2F29629%2F2026&amp;symbol=KONSULTOWANY_PROJEKT" target="_blank" rel="noopener">
+    WYPEŁNIJ ANKIETĘ SEJMU &rarr;
+  </a>
+</div>
+
+<footer>
+  <p>Materiał społeczny, niezwiązany z żadną instytucją publiczną. Oparty
+  na analizie tekstu ustawy Prawo Łowieckie (Dz. U. z 2025 r. poz. 539)
+  oraz projektu ustawy zmieniającej (druk sejmowy nr 3184).</p>
+  <p class="privacy-note">Ta strona nie używa ciasteczek, nie zbiera
+  danych odwiedzających i nie korzysta z zewnętrznych skryptów
+  analitycznych.</p>
+</footer>
+
+<script>
+(function(){
+  var deadline = new Date("2026-10-18T23:59:00+02:00").getTime();
+  var el = document.getElementById("countdown");
+  function tick(){
+    var now = new Date().getTime();
+    var diff = deadline - now;
+    if(diff <= 0){
+      el.textContent = "Termin konsultacji minął";
+      return;
+    }
+    var d = Math.floor(diff/(1000*60*60*24));
+    var h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+    var m = Math.floor((diff%(1000*60*60))/(1000*60));
+    el.textContent = "Zostało: " + d + " dni " + h + " godz " + m + " min";
+  }
+  tick();
+  setInterval(tick, 60000);
+})();
+</script>
+
+</body>
+</html>
